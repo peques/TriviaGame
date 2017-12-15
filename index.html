@@ -1,71 +1,102 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-
-	<title>Office Trivia</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
-
+    <title>Office Trivia</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
 </head>
 
-
-	<body>
-	<div class="wrapper">
-			<div class="col-md-3">
-		    </div>
-		      <div class="col-md-6 text-center">
-		        <header>
-		        <h1>The Office Trivia!</h1>
-		        </header>
-		        <div class="instructions">
-		          <h2>How Well Do You Know The Office?</h2>
-		          <br>
-		          <h3>Answer All The Questions Before Time Runs Out!</h3>
-		        </div>
-		        
+<body>
+    <div class="wrapper">
+        <div class="col-md-3">
+        </div>
+        <div class="col-md-6 text-center">
+            <header>
+                <h1>The Office Trivia!</h1>
+            </header>
+            <div class="instructions">
+                <h2>How Well Do You Know The Office?</h2>
+                <br>
+                <h3>Answer All The Questions Before Time Runs Out!</h3>
+            </div>
 
 
-		        <div id="timer">
-		        	<h3>
+			<!-- SCORE WILL GO HERE -->
+
+
+			<div id="game">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <p id="correct">Correct: </p>
+                    </li>
+                    <li class="list-group-item">
+                        <p id="wrong">Wrong: </p>
+                    </li>
+                  <!--   <li class="list-group-item">
+                        <p id="number">Magic Number: </p>
+                    </li>
+                    <li class="list-group-item">
+                        <p id="score">Score: </p>
+                    </li> -->
+                </ul>
+            </div>
+
+
+
+            <div id="timer">
+                <h3>
 		        		<p>Get Ready!</p>
 		        	</h3>
-		        </div>
-
-
-
-		    <div id="questions">
-	          <ul class="list-group">
-	            <li class="list-group-item"><p id="q1">Bears. Beets. ___ ?</p></li>
-	            <br>
-	            <li class="list-group-item"><p id="q2">Dwight you ignorant ___ .</p></li>
-	            <br>
-	            <li class="list-group-item"><p id="q3">I'm not superstitious, but I am ___ .</p></li>
-	            <br>
-	            <li class="list-group-item"><p id="q4">What is the name of the company everyone works for and what do they sell?</p></li>
-	            <br>
-	            <li class="list-group-item"><p id="q5">What kind of farm does Dwight run?</p></li>
-	            <br>
-	            <li class="list-group-item"><p id="q6">Where did Jim hide Dwight's desk?</p></li>
-	            <br>
-	            <li class="list-group-item"><p id="q7">Who does Michael hit with his car?</p></li>
-	            <br>
-	            <li class="list-group-item"><p id="q8">Who does Dwight bring as a date to Michael and Jan's dinner party?</p></li>
-	            <br>
-	            <li class="list-group-item"><p id="q9">What did Michael burn his foot on?</p></li>
-	            <br>
-	            <li class="list-group-item"><p id="q10">What did Dwight leave in Angela's freezer?</p></li>
-	          </ul>  
-	        </div>
-
-
-
-	</div>
-				<!-- JavaScript -->
-
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="assets/js/game.js"></script>
-				<!-- JavaScript -->
-	
-	</body>
+            </div>
+            <div id="questions">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <p id="q1">Bears. Beets. ___ ?</p>
+                    </li>
+                    <br>
+                    <li class="list-group-item">
+                        <p id="q2">Dwight you ignorant ___ .</p>
+                    </li>
+                    <br>
+                    <li class="list-group-item">
+                        <p id="q3">I'm not superstitious, but I am ___ .</p>
+                    </li>
+                    <br>
+                    <li class="list-group-item">
+                        <p id="q4">What is the name of the company everyone works for and what do they sell?</p>
+                    </li>
+                    <br>
+                    <li class="list-group-item">
+                        <p id="q5">What kind of farm does Dwight run?</p>
+                    </li>
+                    <br>
+                    <li class="list-group-item">
+                        <p id="q6">Where did Jim hide Dwight's desk?</p>
+                    </li>
+                    <br>
+                    <li class="list-group-item">
+                        <p id="q7">Who does Michael hit with his car?</p>
+                    </li>
+                    <br>
+                    <li class="list-group-item">
+                        <p id="q8">Who does Dwight bring as a date to Michael and Jan's dinner party?</p>
+                    </li>
+                    <br>
+                    <li class="list-group-item">
+                        <p id="q9">What did Michael burn his foot on?</p>
+                    </li>
+                    <br>
+                    <li class="list-group-item">
+                        <p id="q10">What did Dwight leave in Angela's freezer?</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="assets/js/game.js"></script>
+        <!-- JavaScript -->
+</body>
 
 </html>

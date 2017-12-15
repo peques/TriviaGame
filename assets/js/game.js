@@ -1,5 +1,7 @@
 
 var e = 0;
+var correct = 0;
+var wrong = 0;
 
 
 
@@ -79,6 +81,17 @@ var gameData = [
 	for (i = 0; i < gameData[e].options.length; i++){
 		//$("#q1").append("<p>" + gameData[0].options + "</p>");
 		$('#q1').append('<button>' + gameData[0].options[i] + '</button>');
+
+		$('button').click(function(){
+			if ($(this).hasClass('correct')){
+				//score +1
+				e++
+			} else {
+				//score -1
+				e++
+			}
+		
+		});
 
 			if (i === gameData[e].answer) {
 				console.log($('button:last').addClass('correct'));
